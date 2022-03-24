@@ -1,0 +1,34 @@
+train_cfg:
+  root: "path/to/data"
+  split: "train"
+  method: "all"
+  compression: "c40"
+  log_steps: 1000
+  val_steps: 1000
+  num_steps: 90000
+  transforms:
+    - name: "Resize"
+      params:
+        height: 299
+        width: 299
+    - name: "HorizontalFlip"
+      params:
+        p: 0.5
+    - name: "Normalize"
+      params:
+        mean: [0.5, 0.5, 0.5]
+        std: [0.5, 0.5, 0.5]
+test_cfg:
+  root: "path/to/data"
+  split: "test"
+  method: "all"
+  compression: "c40"
+  transforms:
+    - name: "Resize"
+      params:
+        height: 299
+        width: 299
+    - name: "Normalize"
+      params:
+        mean: [0.5, 0.5, 0.5]
+        std: [0.5, 0.5, 0.5]
