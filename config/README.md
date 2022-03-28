@@ -39,6 +39,12 @@ data:
   test_branch: "test_cfg"
 ```
 
+- We set different hyper-parameters for the learning rate scheduler according to the used dataset as follows:
+  - FaceForensics++: The learning rate is decayed by 0.5 every 10 epochs.
+  - Celeb-DF: The learning rate is decayed by 0.5 every 10 epochs.
+  - WildDeepfake: The learning rate is decayed by 0.9 every 3000 iterations.
+  - DFDC: The learning rate is decayed by 0.5 every 3 epochs.
+
 #### Dataset Configuration
 - We also use a yaml file to specify the dataset to load for the experiment. These files are placed under `config/dataset/` subfold.
 - Briefly, you should change the `root` parameter according to your storage path. 
