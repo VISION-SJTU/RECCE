@@ -11,11 +11,14 @@ Bibtex will come up soon ...
 
 ----
 
-![RECCE Framework](figure/framework.png)
-
 ### Introduction
 
 This repository is an implementation for *End-to-End Reconstruction-Classification Learning for Face Forgery Detection* presented in CVPR 2022. In the paper, we propose a novel **REC**onstruction-**C**lassification l**E**arning framework called **RECCE** to detect face forgeries. The code is based on Pytorch. Please follow the instructions below to get started.
+
+
+### Motivation
+
+Briefly, we train a reconstruction network over genuine images only and use the output of the latent feature by the encoder to perform binary classification. Due to the discrepancy in the data distribution between genuine and forged faces, the reconstruction differences of forged faces are obvious and also indicate the probably forged regions. 
 
 
 ### Basic Requirements
