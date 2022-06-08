@@ -6,7 +6,14 @@
 
 **Please consider citing our paper if you find it interesting or helpful to your research.**
 ```
-Bibtex will come up soon ...
+@InProceedings{Cao_2022_CVPR,
+    author    = {Cao, Junyi and Ma, Chao and Yao, Taiping and Chen, Shen and Ding, Shouhong and Yang, Xiaokang},
+    title     = {End-to-End Reconstruction-Classification Learning for Face Forgery Detection},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {4113-4122}
+}
 ```
 
 ----
